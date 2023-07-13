@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>schatten jacht</title>
+</head>
+<body id="a" style="background-color: #FFFFCC">
+<div style="margin-left:30%">
+  <input id="n1" type="text">
+  <input id="n2" type="text">
+  <input id="n3" type="text">
+  <button onclick="check()"> check numbers</button>
+    <p>Getallen onthullen hints, één voor één,
+de schat wacht, verborgen en ongezien.
+Verdien ze allemaal, de locatie wordt vrijgegeven,
+avontuur en beloning, een schat om te beleven.</p>
+    <p id="h1">*'Ik ben op een plek waar je kunt rennen,
+Met bomen en paden om te verkennen.'
+                               -eerste getal</p>
+<p id="h2"></p>
+<p id="h3"></p>
+<p id="h4"></p>
+</div>
+
+<script>
+var n1=""
+var n2=""
+var n3=""
+var nb1 = 0
+var nb2=0
+var nb3=0
+var f=""
+  function check(){
+   n1=document.getElementById("n1").value
+   n2=document.getElementById("n2").value
+   n3=document.getElementById("n3").value
+   if (n1=="986"){
+   nb1=1
+   document.getElementById("h2").innerHTML="* daar waar doelen verwijdert werden en velen zich ontspannen van het leren, bevindt zich het volgende getal dat jullie begeren"
+
+
+   }
+   else{
+   document.getElementById("h2").innerHTML=" wrong first number"
+   }
+   if (n2=="710"){
+   nb2=1
+   document.getElementById("h3").innerHTML="* elk weekeinde gedaan, met zen allen pakken aan, gezellig eten met zen allen, om volgende week te kunnen knallen "
+
+   }
+   else{
+   document.getElementById("h3").innerHTML=" wrong seccond number"
+
+   }
+   if (n3=="369"){
+   nb3=1
+   }
+   else{
+   document.getElementById("h4").innerHTML=" wrong third number"
+   }
+   if (nb1==1 && nb2==1 && nb3==1){
+   alert("good job!!!!!")
+   document.write('<img src="eind.png">')
+   }
+  }
+
+
+</script>
+</body>
+</html>
